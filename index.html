@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkie by AngPhie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Checkie <span>by AngPhie</span></h1>
+  </header>
+
+  <main class="main-container">
+    <section class="app-container">
+      <h1>To-Do List</h1>
+      <div class="motivation">"You are capable of amazing things!"</div>
+
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a task..." />
+        <input type="date" id="dueDateInput">
+        <select id="priorityInput">
+          <option value="Low">🟢 Low</option>
+          <option value="Medium">🟡 Medium</option>
+          <option value="High">🔴 High</option>
+        </select>
+        <input type="text" id="tagInput" placeholder="Tag (e.g. school)" />
+        <button>➕</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <h3 class="archive-title">Completed Tasks</h3>
+      <ul id="archiveList"></ul>
+    </section>
+
+    <section class="sticky-wall-section">
+      <h2>Sticky Wall</h2>
+      <div class="sticky-wall-grid" id="stickyWall">
+        <div class="sticky-note add-note">+</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Empty script: no backend, no fetch, no API -->
+  <script>
+    // All logic will be added later. This is frontend-only for now.
+  </script>
+</body>
+</html>
